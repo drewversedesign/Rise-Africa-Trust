@@ -75,4 +75,4 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
   );
 };
 
-export default Footer;
+export default React.memo(Footer);

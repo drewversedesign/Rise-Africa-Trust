@@ -189,4 +189,4 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, currentPage, 
   );
 };
 
-export default Header;
+export default React.memo(Header);
