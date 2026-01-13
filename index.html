@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Rise Africa Trust - Non-Profit Charity Organization</title>
+    <meta name="title" content="Rise Africa Trust - Non-Profit Charity Organization">
+    <meta name="description" content="Empowering communities across Africa with sustainable development, education, and healthcare initiatives. Join us to make a difference." />
+    <meta name="keywords" content="charity, non-profit, Africa, donation, volunteer, education, healthcare, sustainable development, Rise Africa Trust, humanitarian aid, NGO" />
+    <meta name="author" content="Rise Africa Trust" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#006D5B" />
+    <link rel="canonical" href="https://riseafricatrust.org/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://riseafricatrust.org/" />
+    <meta property="og:title" content="Rise Africa Trust - Empowering Communities" />
+    <meta property="og:description" content="Empowering communities across Africa with sustainable development, education, and healthcare initiatives. Join us to make a difference." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://riseafricatrust.org/" />
+    <meta property="twitter:title" content="Rise Africa Trust - Empowering Communities" />
+    <meta property="twitter:description" content="Empowering communities across Africa with sustainable development, education, and healthcare initiatives. Join us to make a difference." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#006D5B",
+              "primary-dark": "#005a4b",
+              secondary: "#FACC15",
+              "secondary-dark": "#EAB308",
+              "background-light": "#F9FAFB",
+              "background-dark": "#111827",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1F2937",
+              "text-main": "#111827",
+              "text-light": "#F3F4F6",
+              "text-muted-light": "#6B7280",
+              "text-muted-dark": "#9CA3AF",
+            },
+            fontFamily: {
+              display: ["DM Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              xl: "1rem",
+              "2xl": "1.5rem",
+              "3xl": "2rem",
+              "4xl": "2.5rem",
+            },
+            boxShadow: {
+              soft: "0 10px 40px -10px rgba(0,0,0,0.08)",
+            },
+            backgroundImage: {
+              'dots-pattern': "radial-gradient(#CBD5E1 1px, transparent 1px)",
+            },
+            backgroundSize: {
+              'dots-pattern': '20px 20px',
+            },
+            animation: {
+              'scroll': 'scroll 30s linear infinite',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'DM Sans', sans-serif;
+      }
+      .blob-shape {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      }
+      .donut-chart {
+        background: conic-gradient(
+            #006D5B 0% 80%, 
+            #FACC15 80% 95%, 
+            #E5E7EB 95% 100%
+        );
+        border-radius: 50%;
+      }
+      .dark .donut-chart {
+        background: conic-gradient(
+            #006D5B 0% 80%, 
+            #FACC15 80% 95%, 
+            #374151 95% 100%
+        );
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "animejs": "https://esm.sh/animejs@3.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-text-main dark:text-text-light font-body transition-colors duration-300 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
