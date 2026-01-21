@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import AboutPage from './components/AboutPage';
@@ -20,14 +20,14 @@ const App: React.FC = () => {
     }
   }, [darkMode]);
 
-  const toggleDarkMode = useCallback(() => {
-    setDarkMode(prevMode => !prevMode);
-  }, []);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
-  const navigateTo = useCallback((page: Page) => {
+  const navigateTo = (page: Page) => {
     setCurrentPage(page);
     window.scrollTo(0, 0);
-  }, []);
+  };
 
   const renderPage = () => {
     switch (currentPage) {

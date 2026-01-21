@@ -22,9 +22,9 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, currentPage, 
       <div className="hidden lg:block bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-xs text-text-muted-light dark:text-text-muted-dark">
           <div className="flex space-x-4">
-            <a href="#" title="Facebook" aria-label="Facebook" className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"><i className="material-icons-round text-sm align-middle">facebook</i></a>
-            <a href="#" title="Instagram" aria-label="Instagram" className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"><i className="material-icons-round text-sm align-middle">filter_vintage</i></a>
-            <a href="#" title="YouTube" aria-label="YouTube" className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"><i className="material-icons-round text-sm align-middle">smart_display</i></a>
+            <a href="#" aria-label="Facebook" className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"><i className="material-icons-round text-sm align-middle">facebook</i></a>
+            <a href="#" aria-label="Instagram" className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"><i className="material-icons-round text-sm align-middle">filter_vintage</i></a>
+            <a href="#" aria-label="YouTube" className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"><i className="material-icons-round text-sm align-middle">smart_display</i></a>
           </div>
           <div className="flex space-x-6">
             <span className="flex items-center"><i className="material-icons-round text-sm mr-1" aria-hidden="true">location_on</i> 124 Mandela Avenue - Johannesburg, South Africa</span>
@@ -189,4 +189,4 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, currentPage, 
   );
 };
 
-export default React.memo(Header);
+export default Header;
